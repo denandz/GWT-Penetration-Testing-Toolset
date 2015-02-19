@@ -184,7 +184,7 @@ if __name__ == "__main__":
                                 
                             if param_var_match:
                                 param = get_global_val( param_var_match.group(1), the_page )
-                                methods[-1] = methods[-1]+param+","
+                                methods[-1] = "%s%s," % (methods[-1],param)
                              
                         a_method = methods[-1][:-1]
                         methods[-1] = a_method + " )"
